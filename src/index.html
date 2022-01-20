@@ -1,29 +1,259 @@
+Form html con JS
+
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container-fluid justify-content-center border border-2 containerBorder"
+    >
+      <div class="row justify-content-center firsRow">
+        <div class="col-lg-12">
+          <h1>Payment from example</h1>
+        </div>
       </div>
+
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="row justify-content-center rowSpaces">
+          <div class="col-xl-12 alertMessage">
+            <div class="myAlert dnone">
+              <div class="alert alert-danger" role="alert">
+                Some fields are missing
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row CardCVCAmount justify-content-center rowSpaces">
+          <div class="col-xl-7">
+            <div class="form-group">
+              <label for="validationCustom01">Card#</label>
+
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="Enter card"
+                required
+              />
+              <div class="valid-tooltip">¡Campo válido!</div>
+              <div class="invalid-tooltip">Debe completar los datos.</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3">
+            <div class="form-group">
+              <label for="validationCustom02">CVC#</label>
+
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustom02"
+                placeholder="Enter CVC"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-xl-2">
+            <div class="form-group">
+              <label for="validationCustomUsername">Amount</label>
+
+              <input
+                type="number"
+                class="form-control"
+                id="validationCustomUsername"
+                placeholder="Enter Amount"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center rowSpaces">
+          <div class="col-xl-6">
+            <div class="form-group">
+              <label for="validationCustom03">First Name</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom03"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="form-group">
+              <label for="validationCustom04">Last Name</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom04"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center rowSpaces">
+          <div class="col-xl-6">
+            <div class="form-group">
+              <label for="validationCustom05">City</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom05"
+                placeholder="Enter city"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-xl-3">
+            <div class="form-group">
+              <label for="inputCard validationCustom05">State</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom05"
+                placeholder="Enter state"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-xl-3">
+            <div class="form-group">
+              <label for="invalidCheck">Postal Code</label>
+
+              <input
+                type="number"
+                class="form-control"
+                id="invalidCheck"
+                placeholder="Enter postal code"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center rowMessage rowSpaces">
+          <div class="col-xl-6">
+            <p>We accept:</p>
+
+            <div class="cardsicons">
+              <div class="cardMove">
+                <input
+                  type="radio"
+                  id="huey"
+                  name="drone"
+                  value="huey"
+                  checked
+                />
+
+                <label for="huey"
+                  ><img
+                    class="cards"
+                    src="https://img.icons8.com/ios/50/000000/mastercard-credit-card.png"
+                    alt="MasterCard"
+                /></label>
+              </div>
+
+              <div class="cardMove">
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+
+                <label for="dewey"
+                  ><img
+                    class="cards"
+                    src="https://img.icons8.com/ios/50/000000/visa.png"
+                    alt="Visa"
+                /></label>
+              </div>
+
+              <div class="cardMove">
+                <input type="radio" id="louie" name="drone" value="louie" />
+
+                <label for="louie"
+                  ><img
+                    class="cards"
+                    src="https://img.icons8.com/ios/50/000000/diners-club.png"
+                    alt="Diners Club"
+                /></label>
+              </div>
+
+              <div class="cardMove">
+                <input type="radio" id="louie" name="drone" value="louie" />
+
+                <label for="louie"
+                  ><img
+                    class="cards"
+                    src="https://img.icons8.com/ios/50/000000/amex.png"
+                    alt="America Express"
+                /></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="form-group">
+              <label for="inputCard">Message</label>
+
+              <!--<input type="text" class="form-control form-control-lg" id="message"
+
+                            placeholder="Enter message">-->
+
+              <textarea
+                rows="5"
+                class="form-control"
+                name="comment"
+                form="usrform"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row colorrowButtons">
+          <div class="footerbutton">
+            <div class="col-xl-12">
+              <button type="submit" class="btn btn-primary lastbutton">
+                Cancel
+              </button>
+
+              <button type="submit" class="btn btn-primary lastbutton">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>

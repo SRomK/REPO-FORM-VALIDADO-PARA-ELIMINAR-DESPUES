@@ -1,1 +1,99 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+form css js body {
+  padding: 20px;
+}
+
+.containerBorder {
+  border-radius: 10px;
+}
+
+h1 {
+  background-color: #f5f3f3;
+
+  border-radius: 3px;
+
+  margin-bottom: 6px;
+
+  width: 100%;
+}
+
+.dnone {
+  display: none;
+}
+
+.dshow {
+  display: block;
+}
+
+.firstRow {
+  background-color: #f5f3f3;
+
+  border-style: #9c9b9b;
+}
+
+.alertMessage {
+  margin: 6px;
+
+  width: 97%;
+}
+
+.rowSpaces {
+  margin-top: 10px;
+
+  margin-bottom: 10px;
+}
+
+.colorrowButtons {
+  background-color: #f5f3f3;
+}
+
+.cardsicons {
+  display: flex;
+
+  background-color: lightgray;
+
+  width: 45%;
+
+  border-radius: 5px;
+
+  padding-left: 15px;
+}
+
+.cards {
+  width: 30px;
+
+  height: 33px;
+}
+
+.cardMove {
+  padding-right: 30px;
+}
+
+.footerbutton {
+  display: flex;
+
+  padding-left: 90%;
+
+  margin-top: 35px;
+
+  padding-bottom: 10px;
+}
+
+.lastbutton {
+  background-color: grey;
+
+  border: grey;
+}
+
+h6 {
+  color: #727070;
+}
+
+.rowMessage {
+  padding-bottom: 35px;
+}
+
+/*
+
+div general padding para que este separado del borde 
+
+display flex eje de coordenadas en el eje x y eje y align item center justify content center*/
